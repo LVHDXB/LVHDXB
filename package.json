@@ -1,0 +1,84 @@
+{
+  "name": "similarity-search-nodejs",
+  "version": "0.8.5",
+  "description": "A sample app for Bluemix that use the Similarity Search feature in the Visual Recognition service.",
+  "main": "./server/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watson-developer-cloud/similarity-search-nodejs.git"
+  },
+  "author": "IBM Corp.",
+  "contributors": [
+    {
+      "name": "James Zhang",
+      "email": "jzhang300@us.ibm.com"
+    },
+    {
+      "name": "German Attanasio Ruiz",
+      "email": "germanatt@us.ibm.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/watson-developer-cloud/similarity-search-nodejs/issues"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "autofix": "eslint --fix .",
+    "build": "./node_modules/.bin/gulp",
+    "dev": "./node_modules/.bin/gulp serve",
+    "lint": "eslint .",
+    "start": "node ./server/index.js",
+    "validate": "npm ls"
+  },
+  "dependencies": {
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.23.0",
+    "babelify": "^7.3.0",
+    "body-parser": "^1.16.1",
+    "breakpoint-sass": "^2.7.1",
+    "browserify": "^14.1.0",
+    "compression": "^1.6.2",
+    "debug": "^2.6.1",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "express-rate-limit": "^2.6.0",
+    "express-secure-only": "^0.2.1",
+    "extend": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.30",
+    "gulp-sass": "^3.1.0",
+    "helmet": "^3.4.1",
+    "jquery": "^3.1.1",
+    "minifyify": "^7.3.5",
+    "modular-scale": "^4.4.1",
+    "modularscale-sass": "^2.1.1",
+    "morgan": "^1.8.1",
+    "multer": "^1.3.0",
+    "prismjs": "^1.6.0",
+    "react": "^15.4.2",
+    "react-addons-pure-render-mixin": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-dropzone": "^3.11.0",
+    "react-prism": "^4.0.0",
+    "request": "^2.79.0",
+    "uglifyify": "^3.0.4",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0",
+    "watson-developer-cloud": "^2.22.1",
+    "watson-react-components": "^0.5.9",
+    "watson-ui-components": "^0.6.0"
+  },
+  "engines": {
+    "node": ">=6.0",
+    "npm": ">=3.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint": "^3.16.1"
+  }
+}
